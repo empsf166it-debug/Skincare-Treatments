@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DermaSkill Academy | Premium Skincare Education</title>
+    <meta name="description" content="Master the Science Behind Beautiful Skin. Professional skincare education, treatment techniques, and certification.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="ds-header" id="header">
+        <div class="container-fluid ds-nav-container">
+            <a href="#hero" class="ds-logo">
+                <i class="fa-solid fa-spa ds-logo-icon"></i>
+                <span class="ds-logo-text">DermaSkill</span>
+            </a>
+            
+            <nav class="ds-nav">
+                <ul class="ds-nav-list">
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#academy">Academy</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#learning">Learning</a></li>
+                    <li><a href="#instructors">Instructors</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="ds-nav-actions">
+                <button class="icon-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#courses" class="btn-premium magnetic-btn">Explore Courses</a>
+                <button class="hamburger" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="ds-mobile-menu">
+            <ul class="ds-mobile-nav-list mb-4">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#academy">Academy</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#learning">Learning</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#courses" class="btn-premium w-100 text-center mt-3">Explore Courses</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 01 - Immersive Hero -->
+        <section id="hero" class="ds-hero section-spacing">
+            <div class="container ds-hero-container">
+                <div class="ds-hero-left reveal-text">
+                    <span class="ds-label">PROFESSIONAL SKINCARE EDUCATION</span>
+                    <h1 class="ds-h1">Master the Science <br>Behind Beautiful Skin.</h1>
+                    <p class="ds-lead slide-in-desc">Build professional skincare knowledge through expert-led lessons, practical treatment education, interactive assessments and structured learning.</p>
+                    
+                    <div class="ds-hero-actions stagger-in">
+                        <a href="#courses" class="btn-premium">Explore Courses</a>
+                        <a href="#learning" class="btn-outline-premium">Start Learning</a>
+                    </div>
+                    
+                    <div class="ds-trust-indicators stagger-in">
+                        <div class="trust-item"><i class="fa-solid fa-certificate"></i> 12+ Professional Courses</div>
+                        <div class="trust-item"><i class="fa-solid fa-video"></i> 48+ Video Lessons</div>
+                        <div class="trust-item"><i class="fa-solid fa-award"></i> Certified Learning</div>
+                    </div>
+                </div>
+                
+                <div class="ds-hero-right">
+                    <div class="ds-hero-3d-scene">
+                        <img src="https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80" alt="Premium Skincare Serum" class="hero-3d-main float-anim">
+                        <div class="glass-card glass-floating-1 parallax-obj" data-speed="0.05">
+                            <i class="fa-solid fa-flask"></i> Advanced Formulation
+                        </div>
+                        <div class="glass-card glass-floating-2 parallax-obj" data-speed="-0.03">
+                            <div class="progress-ring">
+                                <span class="progress-val">85%</span>
+                            </div>
+                            <span>Course Progress</span>
+                        </div>
+                        <div class="particles" id="hero-particles"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 02 - Academy Introduction -->
+        <section id="academy" class="ds-academy section-spacing">
+            <div class="container">
+                <div class="row ds-academy-layout align-items-center">
+                    <div class="col-lg-6 ds-academy-img-col mask-reveal">
+                        <div class="academy-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" alt="Skincare Treatment" class="academy-img">
+                            <div class="academy-floating-card">
+                                <span class="section-indicator">01</span>
+                                <h4>Excellence in Practice</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ds-academy-content slide-up-fade">
+                        <h2 class="ds-h2">Where Skincare Knowledge Becomes Professional Skill</h2>
+                        <p>We bridge the gap between theoretical knowledge and practical application. Our academy provides industry-leading education designed for ambitious professionals wanting to excel in the aesthetic and skincare industry.</p>
+                        
+                        <div class="ds-stats">
+                            <div class="ds-stat-item">
+                                <span class="counter" data-target="5000">0</span>+
+                                <span class="stat-label">Learners</span>
+                            </div>
+                            <div class="ds-stat-item">
+                                <span class="counter" data-target="12">0</span>+
+                                <span class="stat-label">Courses</span>
+                            </div>
+                            <div class="ds-stat-item">
+                                <span class="counter" data-target="48">0</span>+
+                                <span class="stat-label">Lessons</span>
+                            </div>
+                            <div class="ds-stat-item">
+                                <span class="counter" data-target="96">0</span>%
+                                <span class="stat-label">Completion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 03 - Learning Journey -->
+        <section id="journey" class="ds-journey section-spacing">
+            <div class="container text-center">
+                <h2 class="ds-h2 scale-reveal">Your Journey From Curious to Certified</h2>
+                
+                <div class="journey-path-container">
+                    <svg class="journey-path-svg" viewBox="0 0 1000 200" preserveAspectRatio="none">
+                        <path class="journey-path-line" d="M 50,100 Q 250,200 500,100 T 950,100" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="10 10"/>
+                    </svg>
+                    
+                    <div class="journey-nodes">
+                        <div class="journey-node node-anim" style="transition-delay: 0.1s">
+                            <div class="node-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <h5>01 — Discover</h5>
+                            <p>Explore foundations</p>
+                        </div>
+                        <div class="journey-node node-anim" style="transition-delay: 0.3s">
+                            <div class="node-icon"><i class="fa-solid fa-book-open"></i></div>
+                            <h5>02 — Learn</h5>
+                            <p>Absorb expert theory</p>
+                        </div>
+                        <div class="journey-node node-anim" style="transition-delay: 0.5s">
+                            <div class="node-icon"><i class="fa-solid fa-hands-bubbles"></i></div>
+                            <h5>03 — Practice</h5>
+                            <p>Apply techniques</p>
+                        </div>
+                        <div class="journey-node node-anim" style="transition-delay: 0.7s">
+                            <div class="node-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                            <h5>04 — Assess</h5>
+                            <p>Validate <br>skills</p>
+                        </div>
+                        <div class="journey-node node-anim" style="transition-delay: 0.9s">
+                            <div class="node-icon"><i class="fa-solid fa-crown"></i></div>
+                            <h5>05 — Master</h5>
+                            <p>Achieve certification</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 04 - Featured Courses -->
+        <section id="courses" class="ds-courses section-spacing">
+            <div class="container">
+                <div class="ds-courses-layout">
+                    <!-- Featured Large Course -->
+                    <div class="ds-course-featured tilt-effect">
+                        <div class="course-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80" alt="Advanced Facial Treatments">
+                            <div class="course-badge">Advanced</div>
+                            <div class="glass-overlay">
+                                <h3>Advanced Facial Treatments</h3>
+                                <div class="course-meta">
+                                    <span><i class="fa-regular fa-clock"></i> 8 Weeks</span>
+                                    <span><i class="fa-solid fa-list-ol"></i> 24 Lessons</span>
+                                    <span><i class="fa-solid fa-user-tie"></i> Dr. Sarah Jenkins</span>
+                                </div>
+                                <div class="progress mt-3" style="height: 6px;">
+                                    <div class="progress-bar bg-gold" style="width: 45%;"></div>
+                                </div>
+                                <a href="#" class="btn-outline-premium mt-4">Explore Course</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Smaller Staggered Courses -->
+                    <div class="ds-courses-small">
+                        <div class="ds-course-card course-slide-in" style="transition-delay: 0.1s">
+                            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=500&q=80" alt="Clinical Skincare Fundamentals">
+                            <div class="course-card-content">
+                                <div class="course-level">Beginner</div>
+                                <h4>Clinical Skincare Fundamentals</h4>
+                            </div>
+                        </div>
+                        <div class="ds-course-card course-slide-in" style="transition-delay: 0.2s">
+                            <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=500&q=80" alt="Chemical Peel Techniques">
+                            <div class="course-card-content">
+                                <div class="course-level">Intermediate</div>
+                                <h4>Chemical Peel Techniques</h4>
+                            </div>
+                        </div>
+                        <div class="ds-course-card course-slide-in" style="transition-delay: 0.3s">
+                            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=500&q=80" alt="Acne Treatment Specialist">
+                            <div class="course-card-content">
+                                <div class="course-level">Advanced</div>
+                                <h4>Acne Treatment Specialist</h4>
+                            </div>
+                        </div>
+                        <div class="ds-course-card course-slide-in" style="transition-delay: 0.4s">
+                            <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=500&q=80" alt="Skin Analysis">
+                            <div class="course-card-content">
+                                <div class="course-level">Intermediate</div>
+                                <h4>Skin Analysis & Consultation</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 05 - Interactive Learning Experience -->
+        <section id="learning" class="ds-dashboard-preview section-spacing">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="ds-h2 fade-up">Learning That Moves With You</h2>
+                </div>
+                
+                <div class="dashboard-3d-container">
+                    <div class="dashboard-ui glass-panel">
+                        <div class="dashboard-header">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="avatar">DA</div>
+                                <div>
+                                    <h5 class="mb-0">Welcome back, Learner</h5>
+                                    <small>Continue your journey</small>
+                                </div>
+                            </div>
+                            <div class="learning-streak">
+                                <i class="fa-solid fa-fire text-gold"></i> 14 Day Streak
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-grid">
+                            <div class="dash-card dash-video glass-panel-inner">
+                                <div class="video-mockup">
+                                    <i class="fa-solid fa-play play-icon"></i>
+                                    <span class="vid-time">12:45</span>
+                                </div>
+                                <h6 class="mt-3">Understanding Skin Barrier</h6>
+                                <p class="small text-muted mb-0">Lesson 3 • Advanced Fundamentals</p>
+                            </div>
+                            
+                            <div class="dash-card dash-progress glass-panel-inner">
+                                <h6>Course Progress</h6>
+                                <div class="circular-progress">
+                                    <div class="inner-circle">68%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="dash-card dash-quiz glass-panel-inner">
+                                <h6>Latest Quiz Score</h6>
+                                <div class="score-bar">
+                                    <div class="score-fill" style="width: 92%;"></div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-2">
+                                    <small>Anatomy</small>
+                                    <small>92% (Pass)</small>
+                                </div>
+                            </div>
+                            
+                            <div class="dash-card dash-resources glass-panel-inner">
+                                <h6>Resources</h6>
+                                <ul class="resource-list">
+                                    <li><i class="fa-regular fa-file-pdf"></i> Fitzpatrick Scale Guide</li>
+                                    <li><i class="fa-solid fa-download"></i> Ingredient Glossary</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-notification glass-panel">
+                        <i class="fa-solid fa-check-circle text-success"></i>
+                        <div>
+                            <strong>Certificate Unlocked</strong>
+                            <p class="mb-0 small">Module 1 Completed!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 06 - Video Lesson -->
+        <section class="ds-video-resources section-spacing">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 video-col slide-right">
+                        <div class="premium-video-player">
+                            <img src="https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=800&q=80" alt="Video Thumbnail">
+                            <div class="player-overlay">
+                                <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+                                <div class="player-controls">
+                                    <span>Applying AHA/BHA Peels</span>
+                                    <div class="progress-timeline">
+                                        <div class="progress-fill" style="width: 30%;"></div>
+                                    </div>
+                                    <span>04:12 / 15:30</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 resources-col stagger-list">
+                        <h2 class="ds-h2">Everything You Need to Learn Better</h2>
+                        <ul class="features-list">
+                            <li>
+                                <div class="f-icon"><i class="fa-solid fa-video"></i></div>
+                                <div>
+                                    <h5>HD Video Lessons</h5>
+                                    <p>Cinematic quality demonstrations.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="f-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
+                                <div>
+                                    <h5>Downloadable Resources</h5>
+                                    <p>Protocols, guides, and charts.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="f-icon"><i class="fa-solid fa-pen-to-square"></i></div>
+                                <div>
+                                    <h5>Interactive Quizzes</h5>
+                                    <p>Test your knowledge instantly.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 07 - Instructors -->
+        <section id="instructors" class="ds-instructors section-spacing">
+            <div class="container">
+                <h2 class="ds-h2 mb-5">Learn From Skincare Professionals</h2>
+                
+                <div class="instructors-editorial">
+                    <div class="instructor-featured img-zoom-anim">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Dr. Sarah Jenkins">
+                        <div class="instructor-info">
+                            <h3>Dr. Sarah Jenkins</h3>
+                            <span>Clinical Skincare Expert</span>
+                        </div>
+                    </div>
+                    
+                    <div class="instructor-small img-zoom-anim">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Elena Rostova">
+                        <div class="instructor-info">
+                            <h4>Elena Rostova</h4>
+                            <span>Facial Treatments</span>
+                        </div>
+                    </div>
+                    
+                    <div class="instructor-small img-zoom-anim">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Michael Chen">
+                        <div class="instructor-info">
+                            <h4>Michael Chen</h4>
+                            <span>Advanced Aesthetics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 08 - Why DermaSkill (3D Molecule) -->
+        <section class="ds-why-us section-spacing">
+            <div class="container">
+                <div class="why-us-scene">
+                    <div class="central-3d-object pulse-anim">
+                        <img src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?auto=format&fit=crop&w=600&q=80" alt="Science Abstraction" class="abstract-science">
+                    </div>
+                    
+                    <div class="orbiting-cards">
+                        <div class="orbit-card pos-1 glass-panel">Expert-Led Education</div>
+                        <div class="orbit-card pos-2 glass-panel">Practical Knowledge</div>
+                        <div class="orbit-card pos-3 glass-panel">Structured Learning</div>
+                        <div class="orbit-card pos-4 glass-panel">Interactive Assessments</div>
+                        <div class="orbit-card pos-5 glass-panel">Certificate Prep</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 09 - Reviews & Certificate -->
+        <section id="reviews" class="ds-reviews-cert section-spacing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 reviews-col slide-up-fade">
+                        <h2 class="ds-h2 mb-4">What Our Learners Say</h2>
+                        <div class="reviews-carousel">
+                            <div class="review-card glass-panel">
+                                <div class="review-header">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Jessica" class="reviewer-img">
+                                    <div>
+                                        <h5>Jessica M.</h5>
+                                        <small>Advanced Facial Treatments</small>
+                                        <div class="stars text-gold">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mt-3">"The level of detail in these courses is unmatched. The practical demonstrations helped me elevate my clinic's services immensely."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 cert-col mt-5 mt-lg-0">
+                        <div class="certificate-mockup 3d-rotate-anim">
+                            <div class="cert-inner">
+                                <div class="cert-logo"><i class="fa-solid fa-spa"></i> DermaSkill Academy</div>
+                                <h2>Certificate of Completion</h2>
+                                <p>This certifies that</p>
+                                <div class="cert-name">[Student Name]</div>
+                                <p>has successfully completed</p>
+                                <h4>Advanced Aesthetic Techniques</h4>
+                                <div class="cert-footer">
+                                    <div class="date">Date: 12 Nov 2026</div>
+                                    <div class="signature">Dr. S. Jenkins</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cert-text text-center mt-4">
+                            <strong>Learn <i class="fa-solid fa-arrow-right mx-2"></i> Complete <i class="fa-solid fa-arrow-right mx-2"></i> Get Certified</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 10 - Final CTA -->
+        <section id="contact" class="ds-cta section-spacing bg-gradient-anim">
+            <div class="container text-center ds-cta-content">
+                <h2 class="ds-h2 text-white mb-4">Turn Your Passion for Skincare Into Professional Expertise.</h2>
+                <p class="text-white-50 mb-5 max-w-700 mx-auto">Start learning from industry-focused lessons designed to help you understand, practice and master modern skincare treatments.</p>
+                <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                    <a href="#courses" class="btn-premium magnetic-btn">Explore Courses</a>
+                    <a href="#learning" class="btn-outline-light magnetic-btn">Start Learning</a>
+                </div>
+            </div>
+            
+            <!-- Contact Area below CTA -->
+            <div class="container ds-contact-compact glass-panel mt-5">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-envelope text-gold mb-2 fs-4"></i>
+                        <p class="mb-0 text-white">hello@dermaskill.edu</p>
+                    </div>
+                    <div class="col-md-4 border-left-right">
+                        <i class="fa-solid fa-phone text-gold mb-2 fs-4"></i>
+                        <p class="mb-0 text-white">+1 (800) 123-4567</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-location-dot text-gold mb-2 fs-4"></i>
+                        <p class="mb-0 text-white">New York, NY</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="ds-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a href="#hero" class="ds-logo mb-3">
+                        <i class="fa-solid fa-spa text-gold fs-4 me-2"></i>
+                        <span class="fs-4 fw-bold">DermaSkill</span>
+                    </a>
+                    <p class="text-muted pe-lg-4">Premium online skincare education for modern professionals. Elevate your practice today.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 mb-4 mb-lg-0">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#academy">Academy</a></li>
+                        <li><a href="#instructors">Instructors</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6 mb-4 mb-lg-0">
+                    <h5 class="mb-3">Learning</h5>
+                    <ul class="footer-links">
+                        <li><a href="#courses">All Courses</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Certification</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Newsletter</h5>
+                    <p class="text-muted small">Subscribe to get the latest skincare science updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn-premium"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom mt-5 pt-4 border-top d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <p class="mb-0 text-muted small">&copy; 2026 DermaSkill Academy. All rights reserved.</p>
+                <a href="#hero" class="back-to-top" aria-label="Back to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
