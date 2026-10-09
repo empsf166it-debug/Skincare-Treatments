@@ -119,7 +119,7 @@ a {
 }
 
 /* Glassmorphism Classes */
-.glass-panel {
+.glass-panel, .glass-card {
     background: var(--glass-bg);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -504,6 +504,29 @@ a {
     .ds-hero-container { flex-direction: column; }
     .ds-hero-left, .ds-hero-right { width: 100%; padding: 0; }
     .ds-hero-right { height: 400px; margin-top: 50px; }
+
+    .hero-3d-main {
+        width: 90%;
+        height: 90%;
+    }
+
+    .glass-floating-1, .glass-floating-2 {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+        gap: 10px;
+        max-width: 85%;
+        white-space: normal;
+    }
+
+    .glass-floating-1 {
+        top: 15%;
+        right: 5%;
+    }
+
+    .glass-floating-2 {
+        bottom: 15%;
+        left: 5%;
+    }
 }
 
 /* Section 02 - Academy Intro */
@@ -598,11 +621,20 @@ a {
 .journey-nodes {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 5%;
     width: 90%;
     transform: translateY(-50%);
+}
+
+.journey-node:nth-child(2) {
+    margin-top: 80px;
+}
+
+.journey-node:nth-child(4) {
+    margin-top: -80px;
 }
 
 .journey-node {
@@ -640,7 +672,44 @@ a {
 }
 
 @media (max-width: 991px) {
-    .journey-nodes { flex-direction: column; align-items: center; gap: 30px; position: relative; top: 0; transform: none; left: 0; width: 100%; }
+    .journey-nodes { 
+        flex-direction: row; 
+        align-items: stretch;
+        gap: 20px; 
+        position: relative; 
+        top: 0; 
+        transform: none; 
+        left: 0; 
+        width: 100%; 
+        overflow-x: auto; 
+        padding: 10px 20px 30px 20px; 
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        justify-content: flex-start;
+    }
+    
+    .journey-node {
+        flex: 0 0 240px;
+        width: 240px;
+        scroll-snap-align: center;
+        margin-top: 0 !important;
+    }
+
+    .journey-nodes::-webkit-scrollbar {
+        height: 6px;
+    }
+    
+    .journey-nodes::-webkit-scrollbar-track {
+        background: var(--bg-alt);
+        border-radius: 4px;
+        margin: 0 20px;
+    }
+    
+    .journey-nodes::-webkit-scrollbar-thumb {
+        background: var(--champagne-gold);
+        border-radius: 4px;
+    }
+
     .journey-path-svg { display: none; }
     .journey-path-container { height: auto; }
 }
@@ -753,8 +822,9 @@ a {
 
 @media (max-width: 991px) {
     .ds-courses-layout { flex-direction: column; }
-    .course-img-wrapper { height: 400px; }
+    .course-img-wrapper { height: 480px; }
     .course-meta { flex-wrap: wrap; }
+    .glass-overlay { padding-top: 35px; }
 }
 
 /* Section 05 - Interactive Dashboard */
@@ -919,7 +989,14 @@ a {
     .dashboard-grid { grid-template-columns: 1fr; }
     .dash-video { grid-column: 1; grid-row: 1; }
     .dashboard-ui { transform: none; }
-    .floating-notification { right: 10px; bottom: 10px; }
+    .floating-notification {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 /* Section 06 - Video Resources */
@@ -1148,6 +1225,8 @@ a {
     height: 100%;
     top: 0;
     left: 0;
+    pointer-events: none;
+    z-index: 3;
 }
 
 .orbit-card {
@@ -1156,12 +1235,61 @@ a {
     font-weight: 500;
     font-size: 0.95rem;
     white-space: nowrap;
-    transition: transform 0.3s ease;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.orbit-card i {
+    color: var(--champagne-gold);
+    font-size: 1.2rem;
+    transition: transform 0.4s ease;
+}
+
+.orbit-card:hover i {
+    transform: scale(1.2) rotate(10deg);
 }
 
 .orbit-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.1) !important; /* override the float transform while hovered */
     border-color: var(--champagne-gold);
+    box-shadow: 0 15px 30px rgba(203, 163, 101, 0.2);
+    z-index: 10;
+}
+
+/* Dim other cards when one is hovered */
+.why-us-scene:hover .orbit-card:not(:hover) {
+    opacity: 0.5;
+    filter: blur(2px);
+}
+
+.orbit-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px dashed rgba(203, 163, 101, 0.4);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.ring-1 {
+    width: 420px;
+    height: 420px;
+    animation: spinRing 40s linear infinite;
+}
+
+.ring-2 {
+    width: 600px;
+    height: 600px;
+    animation: spinRing 50s linear infinite reverse;
+}
+
+@keyframes spinRing {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 .pos-1 { top: 10%; left: 20%; animation: float 4s infinite 0.5s; }
@@ -1169,6 +1297,17 @@ a {
 .pos-3 { bottom: 30%; right: 20%; animation: float 6s infinite 1.5s; }
 .pos-4 { bottom: 15%; left: 30%; animation: float 5s infinite 2s; }
 .pos-5 { top: 40%; left: 10%; animation: float 4.5s infinite 2.5s; }
+
+@media (max-width: 1199px) {
+    .central-3d-object { width: 240px; height: 240px; }
+    .ring-1 { width: 340px; height: 340px; }
+    .ring-2 { width: 480px; height: 480px; }
+    .pos-1 { left: 5%; }
+    .pos-2 { right: 2%; }
+    .pos-3 { right: 2%; }
+    .pos-4 { left: 10%; }
+    .pos-5 { left: 2%; }
+}
 
 @media (max-width: 991px) {
     .orbit-card { position: relative; top: auto !important; left: auto !important; right: auto !important; bottom: auto !important; animation: none !important; margin: 15px auto; width: max-content; }
